@@ -12,11 +12,13 @@
     font-weight: bold;
     font-style: italic;
     font-family: fantasy;
-    font-size: 35px;
+    font-size: 45px;
     color: brown;  
     position: absolute;     
     top: 10px;
-    left: 500px;
+    left: 800px;
+    padding: 0;
+    margin: 100;
 }
 
 .menu {
@@ -25,6 +27,11 @@
     top: 0;
     left: 0;
     right: 0;
+    /*flex*/
+   /* height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;*/
 }
 .menu ul {
     text-align: center;
@@ -36,12 +43,21 @@
     list-style-type: none; 
     padding-left: 20px;
     margin: 0;
-}
-
+/*flex*/
+   /* background: gray;*/
+   /* flex: 0 0 auto;*/
+  /*  list-style-type: none;*/
+    padding: 20px 60px;
+    box-shadow: 3px 3px 3px 0 #333333;
+    border-radius: 9px;
+}    
 
 body {
-    background-color: #D3D3D3;
-    background-image: url(../img/1.jpg);
+    background-color: /*#D3D3D3;*/
+  /*  background-image: url(../img/fire.gif); фото-огонь в камине*/
+    background-size: cover;
+    
+
 }
 h2 {
     text-align: center;
@@ -73,10 +89,6 @@ li.active-slide {
     display: block;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 1000px;
-}
 
 .band {
     background: #9999CC;
@@ -92,6 +104,7 @@ li.active-slide {
     padding: 5px;
     height: 300px;
     }
+    
 .slider2 {
     background: #9999CC;
     margin-left: 50px;
@@ -101,4 +114,59 @@ li.active-slide {
     display: block;
 
 
+}
+
+.foto {
+
+    height: 250px;
+    width: 230px;
+}
+
+/*флексы, части*/
+.flex2 {
+    flex: 2;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.hight {
+    height: 200px;
+}
+.margin-top {
+    margin-top: 5px;
+}
+.margin-bottom {
+    margin-bottom: 5px;
+}
+.margin-left {
+    margin-left: 5px;
+}
+.margin-right {
+    margin-right: 5px;
+    }
+
+/*Родительский контейнер*/
+.row-container {
+    display: flex;
+    flex-direction: row;
+}
+.column-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.darkgray {
+    background: gray;
 }
