@@ -26,12 +26,7 @@
     background: #D3D3D3;
     top: 0;
     left: 0;
-    right: 0;
-    /*flex*/
-   /* height: 80px;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 60px;*/
+    right: 0;  
 }
 .menu ul {
     text-align: center;
@@ -44,9 +39,7 @@
     padding-left: 20px;
     margin: 0;
 /*flex*/
-   /* background: gray;*/
-   /* flex: 0 0 auto;*/
-  /*  list-style-type: none;*/
+   
     padding: 20px 60px;
     box-shadow: 3px 3px 3px 0 #333333;
     border-radius: 9px;
@@ -54,15 +47,12 @@
 
 body {
     background-color: /*#D3D3D3;*/
-  /*  background-image: url(../img/fire.gif); фото-огонь в камине*/
+    /*background-image: url(../img/fire.gif); фото-огонь в камине*/
     background-size: cover;
-    
-
 }
 h2 {
     text-align: center;
-    font-weight: bold
-
+    font-weight: bold;
 }
 
 .slider {
@@ -112,14 +102,22 @@ li.active-slide {
     height: 300px;   
     position: all;
     display: block;
-
-
 }
 
 .foto {
-
     height: 250px;
     width: 230px;
+}
+
+.foto2 {
+    height: 800px;
+    width: 500px;
+}
+
+.foto3 {
+    height: 400px;
+    width: 600px;
+
 }
 
 /*флексы, части*/
