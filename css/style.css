@@ -1,32 +1,48 @@
 .up {
-    height: 100px;
+    height: 150px;
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: #D3D3D3;  
+    background-color: #708090;  
 }
 
 .up p  {
-    text-align: center;
     white-space: nowrap;
     font-weight: bold;
     font-style: italic;
     font-family: fantasy;
-    font-size: 45px;
-    color: brown;  
-    position: absolute;     
+    font-size: 35px;
+    color: white;
+    padding: 30px;
+    margin: 0;
+    position: absolute;
     top: 10px;
-    left: 800px;
+    left: 120px;
+}
+
+.logo {
     padding: 0;
-    margin: 100;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+.logo img {
+    height: 90px;
 }
 
 .menu {
     position: fixed;
-    background: #D3D3D3;
+    background: none; /* #D3D3D3*/
     top: 0;
     left: 0;
     right: 0;  
+    float: left;
+    text-transform: capitalize;
+    font-size: 25px;
+    margin: 28px 0 0 150px;
+    padding: 0;
+    list-style-type: none;
 }
 .menu ul {
     text-align: center;
@@ -38,21 +54,41 @@
     list-style-type: none; 
     padding-left: 20px;
     margin: 0;
-/*flex*/
-   
-    padding: 20px 60px;
-    box-shadow: 3px 3px 3px 0 #333333;
-    border-radius: 9px;
-}    
+}
+
+.menu a {
+    display: inline-block;
+    padding: 10px;    
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 30px;
+}
 
 body {
-    background-color: /*#D3D3D3;*/
-    /*background-image: url(../img/fire.gif); фото-огонь в камине*/
+    background-color: #F0F8FF /*#333333*/ /*#D3D3D3;*/
+   /* background-image: url(../img/fire.gif);*/ /*фото-огонь в камине*/
     background-size: cover;
+    font-size: 20px;
+    margin: 0;
 }
+
 h2 {
     text-align: center;
     font-weight: bold;
+}
+
+.index img {
+    display: block;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 30px;
+    max-width: 100%;
+
 }
 
 .slider {
@@ -120,7 +156,12 @@ li.active-slide {
 
 }
 
-/*флексы, части*/
+/*Каталог*/
+.row_container {
+    display: flex;
+
+}
+
 .flex2 {
     flex: 2;
 }
@@ -129,9 +170,69 @@ li.active-slide {
     flex: 1;
 }
 
+.flex_content {
+    max-width: 1200px;
+    min-width: 800px;
+    margin: 0 auto;
+    border: gray;
+}
+
+.flex_content_navi {
+    min-width: 195px;
+    max-width: 300px;
+    height: 405px;
+    background: whitesmoke;
+    border-bottom: solid 3px darkgrey;
+    border-right: solid 3px grey;
+    border-radius: 6px;
+}
+
+.flex_content_navi h4 {
+    background: #778899;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    text-align: center;
+    height:30px;
+    padding-top:10px;
+    margin-top: 0; 
+}
+
+.flex_content_navi ul {
+    color: gray;
+}
+
+.flex_content_navi li a {
+    text-align: left;
+}
+
+.sizer_item {
+    min-width: 200px;
+    max-width: 300px;
+    height: 198px;
+    margin: 8px;
+    background: whitesmoke;   
+    border-bottom: solid 3px darkgrey;
+    border-right: solid 3px grey;
+    border-radius: 6px;
+}
+
+.items img {
+    display: block;
+    margin: 0 auto;
+}
+
+.direction_col {
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    max-width: 600px;
+    height: 405px;
+}
+
 .hight {
     height: 200px;
 }
+
 .margin-top {
     margin-top: 5px;
 }
@@ -168,3 +269,64 @@ li.active-slide {
 .darkgray {
     background: gray;
 }
+
+/*Контакты*/
+.left {
+    min-height: 400px;
+    margin: 40px 50px 50px 80px; 
+    background: #f5f5f5;
+    padding: 25px;
+}
+
+.right {    
+    min-height: 400px;
+    padding: 25px;
+    margin: 20px 20px 30px 30px;
+    background: #f5f5f5;
+}
+
+/*Footer*/
+.footer-in {
+    background: #708090;
+    font-size: 14px;
+    height: 100px;
+    text-align: center;
+    margin-bottom: -25px;
+
+}
+
+.footer-in p{
+    color: white;
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 30px;
+    font-style: italic;
+    font-family: fantasy;
+}
+
+@media (max-width: 480px) {
+    .col-12-sm {
+        width: 100%
+    }
+    .col-12-sm h2 {
+        font-size: 0.9em;
+    }
+    .col-12-sm p {
+        font-size: 0.6em;
+    } 
+    
+}
+
+@media (min-width: 480px) and (max-width: 760px) {
+    .col-12-md {
+        width: 100%;
+    }
+    .col-12-md h2 {
+        font-size: 1.1em;
+    }
+    .col-12-sm p {
+        font-size: 0.8em;
+    }  
+}
+
+

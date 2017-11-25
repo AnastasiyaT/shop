@@ -7,10 +7,11 @@
 </head>
 <body>
     <div class="up">
-            <p>Декоративные решетки для камина</p>
+           <!--  <p>Декоративные решетки для камина</p> -->
+    </div>
+        <div class="logo">
+            <img src="img/logo3.jpg" alt="logo">
         </div>
-    
-
     <div class="menu">
         <ul>
             <li><a href="index.html">Главная</a></li>
@@ -18,23 +19,57 @@
             <li><a href="contacts.html">Контакты</a></li>
         </ul>
     </div>
-         <div class="row">
-                    <div class="col-8">
-                        <ul class="slider2">
-                            <p>
-                                Адрес: Санкт-Петербург, 14 линия, д. 5
-                                <br>
-                                Телефоны
-                                <br>
-                                (812) 812-12-12
-                                (812) 812-11-11
-                            </p>
-                                                      
-                        </ul>
-                    </div>
+        <div class="row">
+            <!-- Левая колонка -->
+            <div class="col-9">
+                <div class="left">
+                    <h1>Контакты</h1>
+                    <form>
+                        <fieldset>
+                            <legend>Контакты</legend>        
+                            <div class="maps">
+                                <div>
+                                <p>Телефон: (812) 812-12-12</p>
+                                <p>Адрес: Санкт-Петербург, улица Пионерская, д. 22</p>
+                            </div>
+                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af06d2c7d21d02e7e2e3966e6929103f5f05748fa4f05243867d0356d10261640&amp;source=constructor" width="550" height="350" frameborder="0">               
+                                </iframe>
+                            </div>                          
+                        </fieldset>
+                    </form>                    
+                </div>
             </div>
-
-
-
+            <!-- Правая колонка -->
+            <div class="col-3" >
+                <div class="right">
+                    <h2>Регистрация:</h2>                   
+                    <form action="#" method="post">
+                        <fieldset>
+                            <div>
+                                <br>
+                                <label for="name">Имя&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <input type="text" name="" id="name" placeholder="Введите ваше имя" required>
+                            </div>
+                                <br>
+                            <div>
+                                <label for="email">Email&nbsp;&nbsp;</label>
+                                <input type="email" name="" id="email" placeholder="Введите ваш email" required>
+                            </div>
+                            <br>
+                            <input class="btn" type="submit" name="form-reg" value="Отправить">
+                            <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br>
+                        </fieldset>                         
+                    </form>                    
+                </div> 
+            </div>
+        </div>
+        <!-- Footer -->
+            <div class="footer">
+                <div class="col-12">
+                    <div class="footer-in">
+                        <p>Декоративные решетки для камина © 2017</p>
+                    </div>
+                </div>                     
+            </div>
 </body>
 </html>
