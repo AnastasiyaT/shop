@@ -3,8 +3,7 @@
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: #708090;  
-
+    background-color: #708090;
 }
 
 .up p  {
@@ -28,6 +27,7 @@
     top: 30px;
     left: 40px;
 }
+
 .logo img {
     height: 90px;
 }
@@ -45,11 +45,13 @@
     padding: 0;
     list-style-type: none;
 }
+
 .menu ul {
     text-align: center;
     margin: 0;
     padding: 0;
 }
+
 .menu li {
     display: inline-block;
     list-style-type: none; 
@@ -85,12 +87,12 @@ h2 {
 
 .index img {
     display: block;
-    height: 600px;
-    width: 800px;
+    height:380px;
+    width: 640px;
     border-radius: 5px;
     margin-top: 30px;
     max-width: 100%;
-
+    margin-bottom: 20px; /*отступ снизу*/
 }
 
 .slider {
@@ -111,12 +113,9 @@ h2 {
     background-image: url(../img/3.jpg);
 }
 
-
-
 li.active-slide {
     display: block;
 }
-
 
 .band {
     background: #9999CC;
@@ -137,12 +136,11 @@ li.active-slide {
     background: #9999CC;
     margin-left: 50px;
     padding: 50px;
-    height: 300px;   
-    position: all;
+    height: 300px;    
     display: block;
 }
 
-.foto {
+/*.foto {
     height: 250px;
     width: 230px;
 }
@@ -155,13 +153,11 @@ li.active-slide {
 .foto3 {
     height: 400px;
     width: 600px;
-
-}
+}*/
 
 /*Каталог*/
 .row_container {
     display: flex;
-
 }
 
 .flex2 {
@@ -232,18 +228,21 @@ li.active-slide {
 }
 
 .hight {
-    height: 200px;
+    height: 100px;
 }
 
 .margin-top {
     margin-top: 5px;
 }
+
 .margin-bottom {
     margin-bottom: 5px;
 }
+
 .margin-left {
     margin-left: 5px;
 }
+
 .margin-right {
     margin-right: 5px;
     }
@@ -253,6 +252,7 @@ li.active-slide {
     display: flex;
     flex-direction: row;
 }
+
 .column-container {
     display: flex;
     flex-direction: column;
@@ -294,7 +294,6 @@ li.active-slide {
     height: 100px;
     text-align: center;
     margin-bottom: -25px;
-
 }
 
 .footer-in p{
