@@ -73,7 +73,7 @@
 }
 
 body {
-    background-color: #F0F8FF /*#333333 #D3D3D3;*/
+    background-color: #F0F8FF; /*#333333 #D3D3D3;*/
    /* background-image: url(../img/fire.gif); *//*фото-огонь в камине*/
     background-size: cover;
     font-size: 20px;
