@@ -1,4 +1,42 @@
+<<<<<<< HEAD
 <?php include "header.php";?>
+=======
+<?php
+$link = 'html://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+$link = 'http://shop:8080/';
+$parse_url = parse_url($link);
+
+
+
+
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная -Декоративные решётки для камина</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+      <body>
+        <div class="wraper">
+          <div class="contant">
+                <!-- Шапка-->
+            <div class="up">
+              <p>Декоративные решетки для камина</p>
+            </div>
+            <div class="logo">
+              <img src="img/logo3.jpg" alt="logo">
+            </div>
+                <!--  Меню -->
+            <div class="menu">                   
+              <ul>
+                <li><a href="http://shop:8080/">Главная</a></li>
+                <li><a href="http://shop:8080/catalog.php">Каталог</a></li>
+                <li><a href="http://shop:8080/contacts.php">Контакты</a></li>
+              </ul>
+            </div>
+>>>>>>> 3d1bb9cd0b8a58c5d26bb7041c844fe6daa531c7
                 
             <div class="index">                                
               <div class="row">
@@ -39,4 +77,17 @@
             </div>                                 
           </div>                   
                 <!-- Footer -->
+<<<<<<< HEAD
   <?php include "footer.php";?>    
+=======
+          <div class="footer">
+            <div class="col-12">
+              <div class="footer-in">
+                <p>Декоративные решетки для камина © 2017</p>
+              </div>
+            </div>                     
+          </div>
+        </div>                 
+      </body>
+</html>
+>>>>>>> 3d1bb9cd0b8a58c5d26bb7041c844fe6daa531c7

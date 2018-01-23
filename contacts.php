@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php include "header.php";
 
 // $user = [
@@ -53,6 +54,87 @@
 //     echo "Ваш логин: $login <br> Ваш пароль: $password";
 // }
 ?>
+=======
+<?php
+$user = [
+    [
+        'login' => 'admin',
+        'pwd' => '123'
+
+    ],
+    [
+        // 'login' => 'asd',
+        // 'pwd' => '5645'
+    ]
+
+];
+
+function check_users($users){
+    if (!isset($post['login'])) {
+        return false;
+    }
+    $post = $_POST;
+    foreach ($users as $user) {
+            if ($post['login'] == $user['login']) {
+                if ($post['pwd'] == $user['pwd']){
+                    echo "Вы вошли как". $post['login'];
+                    return true;
+                }               
+            }       
+        }
+
+    echo "Вы не вошли 2";
+    return false;
+}
+// 
+
+if (trim($_POST['login']) || trim($_POST['pwd']) ) {
+    check_users($user);
+}
+if (isset($_POST['login'])) {
+    check_users($user);
+}
+// проверка на спец символы
+if(isset($_POST['login']) && isset($_POST['pwd'])){
+ 
+    $login=htmlentities($_POST['login']);
+    $password = htmlentities($_POST['pwd']);
+    echo "Ваш логин: $login <br> Ваш пароль: $password";
+}
+//удаление тегов
+if(isset($_POST['login']) && isset($_POST['pwd'])){
+ 
+    $login=strip_tags($_POST['login']);
+    $password = strip_tags($_POST['pwd']);
+    echo "Ваш логин: $login <br> Ваш пароль: $password";
+}
+
+
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="up">
+            <p>Декоративные решетки для камина</p>
+    </div>
+        <div class="logo">
+            <img src="img/logo3.jpg" alt="logo">
+        </div>
+    <div class="menu">
+        <ul>
+            <li><a href="http://shop:8080/">Главная</a></li>
+            <li><a href="http://shop:8080/catalog.php">Каталог</a></li>
+            <li><a href="http://shop:8080/contacts.php">Контакты</a></li>
+        </ul>
+    </div>
+>>>>>>> 3d1bb9cd0b8a58c5d26bb7041c844fe6daa531c7
         <div class="row">
             <!-- Левая колонка -->
             <div class="col-9">
@@ -114,4 +196,16 @@
             </div>
         </div>
         <!-- Footer -->
+<<<<<<< HEAD
    <?php include "footer.php";?>
+=======
+            <div class="footer">
+                <div class="col-12">
+                    <div class="footer-in">
+                        <p>Декоративные решетки для камина © 2017</p>
+                    </div>
+                </div>                     
+            </div>
+</body>
+</html>
+>>>>>>> 3d1bb9cd0b8a58c5d26bb7041c844fe6daa531c7
