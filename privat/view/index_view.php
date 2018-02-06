@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Главная -Декоративные решётки для камина</title>
-    <link rel="stylesheet" href="css/index.css">
-</head>
-      <body>
-        <div class="wraper">
-          <div class="contant">
-                <!-- Шапка-->
-            <div class="up">
-              <p>Декоративные решетки для камина</p>
-            </div>
-            <div class="logo">
-              <img src="img/logo3.jpg" alt="logo">
-            </div>
-                <!--  Меню -->
-            <div class="menu">                   
-              <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-              </ul>
-            </div>
+<?php include "header.php";?>
                 
             <div class="index">                                
               <div class="row">
@@ -63,13 +39,5 @@
             </div>                                 
           </div>                   
                 <!-- Footer -->
-          <div class="footer">
-            <div class="col-12">
-              <div class="footer-in">
-                <p>Декоративные решетки для камина © 2017</p>
-              </div>
-            </div>                     
-          </div>
-        </div>                 
-      </body>
-</html>
+  <?php include "footer.php";?>    
+  
