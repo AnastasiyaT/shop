@@ -304,6 +304,11 @@ li.active-slide {
     font-style: italic;
     font-family: fantasy;
 }
+/*Отступы слева и справа на гл странице*/
+.wraper {
+    margin-left: 2%;  
+    margin-right: 2%;
+}
 
 @media (max-width: 480px) {
     .col-12-sm {
