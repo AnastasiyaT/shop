@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Главная -Декоративные решётки для камина</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
-      <body>
+      <body> -->
         <div class="wraper">
           <div class="contant">
                 <!-- Шапка-->
@@ -18,8 +18,8 @@
                 <!--  Меню -->
             <div class="menu">                   
               <ul>
-                <li><a href="http://shop:8080/">Главная</a></li>
-                <li><a href="http://shop:8080/catalog.php">Каталог</a></li>
-                <li><a href="http://shop:8080/contacts.php">Контакты</a></li>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/catalog">Каталог</a></li>
+                <li><a href="/contacts">Контакты</a></li>
               </ul>
             </div>

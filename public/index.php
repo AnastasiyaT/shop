@@ -1,5 +1,5 @@
 <?php
-include "../private/Controllers/controllers.php";
+include "../private/сontrollers/controllers.php";
 function runController() {
     $uri = parse_url($_SERVER['REQUEST_URI'],
         PHP_URL_PATH);

@@ -7,31 +7,50 @@ function indexAction() {
     ]);
 }
 
-function showsAction() {
-    include "../private/Models/shows_model.php";
-    $title = 'Афиша';
-    $view_filename = 'shows_view.php';
+function catalogAction() {
+    include "../private/models/catalog_model.php";
+    $title = 'Каталог';
+    $view_filename = 'catalog_model.php';
     $shows = getAllShows();
     generateResponse($view_filename, [
-        'title' => $title,
-        'shows' => $shows
+        'title' => $title,       
     ]);
 }
 
-function showAction() {
-    include "../private/Models/shows_model.php";
-    $get = $_GET;
-    if (isset($get['id'])) {
-        // получаем массив с show по id из GET запроса
-        $show_by_id = getShowById($get['id']);
-        $title = $show_by_id['title'];
-        $view_filename = 'show_view.php';
-        generateResponse($view_filename, [
-            'title' => $title,
-            'show' => $show_by_id
-        ]);
-    }
+function contactsAction() {
+    include "../private/models/contacts_model.php";
+    $title = 'Контакты';
+    $view_filename = 'contacts_model.php';
+    $shows = getAllShows();
+    generateResponse($view_filename, [
+        'title' => $title,        
+    ]);
 }
+// function showsAction() {
+//     include "../private/Models/shows_model.php";
+//     $title = 'Афиша';
+//     $view_filename = 'shows_view.php';
+//     $shows = getAllShows();
+//     generateResponse($view_filename, [
+//         'title' => $title,
+//         'shows' => $shows
+//     ]);
+// }
+
+// function showAction() {
+//     include "../private/Models/shows_model.php";
+//     $get = $_GET;
+//     if (isset($get['id'])) {
+//         // получаем массив с show по id из GET запроса
+//         $show_by_id = getShowById($get['id']);
+//         $title = $show_by_id['title'];
+//         $view_filename = 'show_view.php';
+//         generateResponse($view_filename, [
+//             'title' => $title,
+//             'show' => $show_by_id
+//         ]);
+//     }
+// }
 
 // function account_authAction() {
 //     include "../private/models/account_model.php";
