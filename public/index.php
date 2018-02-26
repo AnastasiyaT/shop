@@ -1,13 +1,6 @@
 <?php
-include "../privat/сontrollers/controllers.php";
-function runController() {
-    $uri = parse_url($_SERVER['REQUEST_URI'],
-        PHP_URL_PATH);
-    $action = trim($uri, '/') ? : 'index';
-    $action = $action . 'Action';
-//    if (!function_exists($action)) {
-//
-//    }
-    $action();
-}
-runController();
+require_once __DIR__ . '/../vendor/autoload.php';
+
+$urls = file_get_contents('../config.json');
+$app = new \Web\Engine\App($urls);
+$app->run();

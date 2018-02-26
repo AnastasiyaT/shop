@@ -1,0 +1,23 @@
+{
+ 
+  "urls": {
+   		"index":{
+   			"path":"/",
+   			"controller":"\\Tyushina\\Shop\\Controllers\\IndexController::indexAction"
+   		},
+   		"catalog":{
+   			"path":"/catalog",
+   			"controller":"\\Tyushina\\Shop\\Controllers\\CatalogController::catalogAction"
+   		},
+   		"contacts":{
+   			"path":"/contacts",
+   			"controller":"\\Tyushina\\Shop\\Controllers\\ContactsController::contactsAction"
+   		},
+      "reg":{
+        "path":"/reg",
+        "controller":"\\Tyushina\\Shop\\Controllers\\RegController::regAction"
+      }
+   	
+   		
+    }
+  }

@@ -8,7 +8,7 @@ function indexAction() {
 }
 
 function catalogAction() {
-    include "../private/models/catalog_model.php";
+    include "../privat/Models/catalog_model.php";
     $title = 'Каталог';
     $view_filename = 'catalog_model.php';
     $shows = getAllShows();
@@ -18,8 +18,19 @@ function catalogAction() {
 }
 
 function contactsAction() {
-    include "../private/models/contacts_model.php";
+    include "../privat/Models/contacts_model.php";
     $title = 'Контакты';
+    $view_filename = 'contacts_model.php';
+    $shows = getAllShows();
+    generateResponse($view_filename, [
+        'title' => $title,        
+    ]);
+}
+
+
+function regAction() {
+    include "../privat/Models/contacts_model.php";
+    $title = 'Регистрация';
     $view_filename = 'contacts_model.php';
     $shows = getAllShows();
     generateResponse($view_filename, [
@@ -80,5 +91,5 @@ function generateResponse($view, $data=[]) {
     if(is_array($data)) {
         extract($data);
     }
-    require_once "../private/views/template_view.php";
+    require_once "../privat/view/template_view.php";
 }

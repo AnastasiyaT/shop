@@ -1,0 +1,28 @@
+{
+    "name": "tyushina/shop",
+    "description": "project",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tyushina",
+            "email": "nastasiyat@mail.ru"
+        }
+    ],
+    "minimum-stability": "beta",
+      "repositories": [
+        {
+            "type":"git",
+            "url":"https://github.com/web-development-courses/engine"
+
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Tyushina\\Shop\\": "private/"
+        }
+    },
+     "require": {
+        "web/engine": "dev-master"
+    }
+}

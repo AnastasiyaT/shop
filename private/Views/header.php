@@ -21,5 +21,6 @@
                 <li><a href="/">Главная</a></li>
                 <li><a href="/catalog">Каталог</a></li>
                 <li><a href="/contacts">Контакты</a></li>
+                <li><a href="/reg">Регистрация</a></li>
               </ul>
             </div>
